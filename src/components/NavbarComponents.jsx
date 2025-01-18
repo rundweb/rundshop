@@ -26,12 +26,13 @@ const NavbarComponents = () => {
   ];
 
   const [openMenu, setOpenMenu] = useState(true);
+  const [closeDiscount, setCloseDiscount] = useState(false);
   return (
     <div className="flex flex-col">
-      <div className="bg-slate-900 text-white p-2 text-center z-20">
+      <div className={`bg-slate-900 text-white p-2 text-center z-20 items-center justify-center w-full ${closeDiscount ? 'hidden' : "flex"}`}>
         <p className="text-sm font-semibold">
           Sign up GET 20% OFF for your first order.{" "}
-          <span className="underline underline-offset-2">Sign up now</span>
+          <span className="underline underline-offset-2">Sign up now</span> <strong className="ml-2 cursor-pointer" onClick={(()=>setCloseDiscount(!closeDiscount))}>x</strong>
         </p>
       </div>
       <div className="max-w-7xl m-auto p-5 w-full flex justify-between items-center">
@@ -53,7 +54,7 @@ const NavbarComponents = () => {
             </a>
           ))}
         </div>
-        <div className="flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4">
           {menu.map((item) => (
             <a key={item.name} href={item.link} className="text-slate-800 text-base font-normal">
               {item.name}
