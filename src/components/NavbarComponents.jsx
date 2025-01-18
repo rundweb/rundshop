@@ -41,7 +41,7 @@ const NavbarComponents = () => {
         </div>
         <div
           className={`md:hidden fixed flex flex-col  right-0 w-full min-h-screen bg-white items-center justify-center gap-3 ${
-            openMenu ? "-top-full" : "top-0"
+            openMenu ? "-top-[125%]" : "top-0"
           } ease-in-out duration-700`}
         >
           {menu.map((item) => (
