@@ -1,4 +1,5 @@
 import BrandsComponents from "./components/BrandsComponents"
+import ContactComponents from "./components/ContactComponents"
 import CurratedComponents from "./components/CurratedComponents"
 import HomeComponents from "./components/HomeComponents"
 import NavbarComponents from "./components/NavbarComponents"
@@ -15,6 +16,7 @@ const App = () => {
       <ServicesComponents/>
       <CurratedComponents/>
       <ProductComponents/>
+      <ContactComponents/>
     </div>
   )
 }
