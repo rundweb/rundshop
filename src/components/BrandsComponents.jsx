@@ -41,7 +41,7 @@ const BrandsComponents = () => {
   ];
   
   return (
-    <div className="p-5 flex flex-col gap-5 max-w-7xl m-auto">
+    <div className="p-5 flex flex-col gap-5 max-w-7xl m-auto" data-aos="fade-up" data-aos-duration="1500">
       <h1 className=" text-slate-800 text-3xl tracking-wider font-bold">
         Brands
       </h1>

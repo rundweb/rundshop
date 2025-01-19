@@ -40,10 +40,10 @@ const ProductComponents = () => {
   ];
   return (
     <div className="p-5 py-10 max-w-7xl m-auto flex flex-col gap-8">
-      <div>
+      <div data-aos="fade-left" data-aos-duration="1500">
         <h1 className=" text-slate-800 text-2xl tracking-wider font-bold lg:text-3xl">Featured Products</h1>
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden" data-aos="fade-left" data-aos-duration="1500">
         <Swiper spaceBetween={50} slidesPerView={1} loop={true} className="mySwiper">
           {product.map((item) => (
             <SwiperSlide key={item.title}>
@@ -67,7 +67,7 @@ const ProductComponents = () => {
         </Swiper>
       </div>
 
-      <div className="hidden md:flex">
+      <div className="hidden md:flex" data-aos="fade-left" data-aos-duration="1500">
         <Swiper spaceBetween={50} slidesPerView={3} loop={true} className="mySwiper">
           {product.map((item) => (
             <SwiperSlide key={item.title}>

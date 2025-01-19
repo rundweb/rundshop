@@ -19,12 +19,12 @@ const CurratedComponents = () => {
   ];
   return (
     <div className="p-5 max-w-7xl m-auto w-full flex flex-col gap-8">
-      <h1 className=" text-slate-800 text-3xl tracking-wider font-bold">
+      <h1 className=" text-slate-800 text-3xl tracking-wider font-bold" data-aos="fade-up" data-aos-duration="1500">
         Currates picks
       </h1>
       <div className="flex flex-wrap items-center gap-5 sm:justify-around w-full">
         {listImg.map((item) => (
-          <div key={item.images} className="w-full sm:w-[286px]">
+          <div key={item.images} className="w-full sm:w-[286px]" data-aos="fade-up" data-aos-duration="1500">
             <div
               className={`${item.images} bg-cover bg-no-repeat bg-center h-72 rounded-lg p-10 flex items-end justify-center`}
             >

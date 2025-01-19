@@ -1,6 +1,7 @@
 import BrandsComponents from "./components/BrandsComponents"
 import ContactComponents from "./components/ContactComponents"
 import CurratedComponents from "./components/CurratedComponents"
+import FooterComponents from "./components/FooterComponents"
 import HomeComponents from "./components/HomeComponents"
 import NavbarComponents from "./components/NavbarComponents"
 import ProductComponents from "./components/ProductComponents"
@@ -17,6 +18,7 @@ const App = () => {
       <CurratedComponents/>
       <ProductComponents/>
       <ContactComponents/>
+      <FooterComponents/>
     </div>
   )
 }
